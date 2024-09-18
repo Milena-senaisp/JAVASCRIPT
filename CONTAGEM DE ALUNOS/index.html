@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almoço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="laranja" src="./img/laranja.png" alt="Laranja">
+        </div>
+    </header>
+</body>
+<section class="introducao">
+    <div>
+        <h1 class="titulo">Almoço</h1>
+        <p class="texto">Qual opção você gostaria de ser servido no almoço? Clique nas opções (somente uma opção em cada tópico).</p>
+    </div>
+    <div class="PratoPrincipal">
+        <h2>Prato principal</h2>
+    </div>
+    <section class="refeicoes">
+    <div class="comidas">
+        <div class="comida">
+            <div class="img">
+        <button onclick="botao1()">
+        <img src="./img/strogonoff.png" alt="comida"></div>
+    </button>
+        <p>Strogonoff de frango</p>
+        </div>
+        <div class="comida">
+        <div class="img">
+       <button onclick="botao2()">
+        <img src="./img/arroz.png" alt="comida">
+       </button>
+         </div>
+        <p>Arroz</p>
+        </div>
+        <div class="comida">
+        <div class="img">
+         <button onclick="botao3()">
+        <img src="./img//feijao.png" alt="comida">
+         </button>
+        </div>
+        <p>Feijão</p>
+        </div>
+    </section>
+
+<section class="meio"></section>
+    <div class="acompanhantes">
+        <h2>Acompanhantes</h2>
+    </div>
+    <section class="refeicoes">
+    <div class="comidas">
+        <div class="comida">
+            <div class="img">
+               <button onclick="botao4()">
+        <img src="./img/salada.png" alt="comida">
+               </button>
+             </div>
+        <p>Alface, tomate e pepino</p>
+        </div>
+        <div class="comida">
+        <div class="img">
+<button onclick="botao5()">
+        <img src="./img/batata.png" alt="comida">
+        </button>
+         </div>
+        <p>Batata palha</p>
+        </div>    
+</section>
+
+
+<section class="fim"></section>
+    <div class="sobremesas">
+        <h2>Sobremesa</h2>
+    </div>
+    <section class="refeicoes">
+    <div class="comidas">
+        <div class="comida">
+            <div class="img">
+            <button onclick="botao6()">
+        <img src="./img/abacaxi.png" alt="comida">
+            </button>
+             </div>
+        <p>Abacaxi</p>
+        </div>
+</section>
+<h3>Seu cardápio do dia é</h3>
+<section id="situacao1"><p>Olá, sua escolha final foi...</p></section>
+<section id="situacao5"><p>Olá, sua escolha final foi...</p></section>
+<section id="situacao6"><p>Olá, sua escolha final foi...</p></section>
+<section id="situacao2"><p>Olá, sua escolha final foi...</p></section>
+<section id="situacao3"><p>Olá, sua escolha final foi...</p></section>
+<section id="situacao4"><p>Olá, sua escolha final foi...</p></section>
+<button class="continuar">
+    <a href="">continuar</a>
+</button>
+<footer>
+    <div>
+        <img class="laranja" src="./img/laranja.png" alt="Laranja">
+    </div>
+</footer>
+<script>
+  function botao1() {
+            window.alert(`Voce escolheu a opção "Strogonoff de Frango"!`)
+            let res = document.getElementById ('situacao1')
+            let opcao = ('Strogonoff de frango')
+            res.innerHTML = `<p>Prato principal: <strong>${opcao}</strong>.`  
+        }
+        function botao2() {
+            window.alert(`Voce escolheu a opção "Arroz"!`)
+            let res = document.getElementById ('situacao5')
+            let opcao = ('Arroz')
+            res.innerHTML = `<p>Prato principal: <strong> ${opcao}</strong>.` 
+        }
+        function botao3() {
+            window.alert(`Voce escolheu a opção "Feijão"!`)
+            let res = document.getElementById ('situacao6')
+            let opcao = ('Feijão')
+            res.innerHTML = `<p>Prato principal: <strong>${opcao}</strong>.` 
+        }
+        function botao4() {
+            window.alert(`Voce escolheu a opção "Alface, tomate e pepino"!`)
+            let res = document.getElementById ('situacao2')
+            let opcao = ('Alface, tomate e pepino')
+            res.innerHTML = `<p>Acompanhante: <strong>${opcao}</strong>.` 
+    
+        }
+    
+        function botao5() {
+            window.alert(`Voce escolheu a opção "Batata palha"!`)
+            let res = document.getElementById ('situacao3')
+            let opcao = ('Batata palha')
+            res.innerHTML = `<p>Acompanhante: <strong> ${opcao}</strong>.` 
+        
+        }
+        function botao6() {
+            window.alert(`Voce escolheu a opção "Abacaxi"!`)
+            let res = document.getElementById ('situacao4')
+            let opcao = ('Abacaxi')
+            res.innerHTML = `<p>Sobremesa: <strong> ${opcao}</strong>.` 
+        }
+</script>
+
+</body>
+</html>

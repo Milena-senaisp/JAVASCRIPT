@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&#39');
+
+*{
+    border: 0;
+    background: none;
+}
+h1{
+    font-family: 'Montserrat';
+    font-size: 50px;
+    margin: 40px 0px 30px 30px;
+}
+
+.texto{
+    font-family: 'Montserrat' ;
+    font-size: 30px;
+    margin: 30px;
+}
+
+p {
+    font-family: 'Montserrat' ;
+    font-size: 20px;
+    margin: 30px;
+}
+h2 {
+    font-family: 'Montserrat' ;
+    font-size: 35px;
+    margin: 90px 0px 30px 30px;
+}
+
+h3 {
+    font-family: 'Montserrat' ; 
+    margin: 90px 0px 30px 30px;
+    margin-top: -10px ;
+}
+
+.laranja {
+    width: 100%;
+    height: 10%;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.comidas {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;  
+}
+
+.comidas img {
+    margin: 0px 0px;
+}
+/* cima, direita, baixo, esquerda */
+
+
+
+.comidas p {
+    text-align: center;
+}
+
+.comida {
+    margin: 0px 20px;
+
+}
+
+.img:hover {
+    scale: 1.1;
+
+}
+
+.img {
+ transition: all 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+   align-content: center;
+   justify-items: center;
+}
+
+.continuar{
+    font-family: 'Montserrat';
+    border: 1;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #8ac3e0;
+    display: flex;
+    padding: 10px ;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  
+}
+
+.continuar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

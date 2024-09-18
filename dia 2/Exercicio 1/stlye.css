@@ -1,0 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap);
+
+body {font: 12pt}
+h1,h2,h3 {font-family: "Nanum Gothic Coding", monospace; font-weight: 700; font-style: normal;}
+button {font-family: "Nanum Gothic Coding", monospace; font-weight: 700; font-style: normal; padding: 30px;}

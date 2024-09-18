@@ -1,0 +1,33 @@
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+    body { font: 20pt Arial; color: rgb(251, 251, 251); background-color: rgb(21, 186, 164);}
+        button { font-size: 20pt; padding: 30px; color: rgb(247, 247, 247); background-color: rgb(2, 103, 90); }
+    </style>
+</head>
+<body>
+    <h1>Média das Notas</h1>
+    <button onclick="media()">Calcular média</button>
+    <section id="situacao">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+    <script>
+        function media() {
+            let nom = window.prompt('Qual é o nome do aluno? ')
+            let n1 = Number(window.prompt(`Qual foi a primeira nota de ${nom}? `))
+            let n2 = Number(window.prompt(`Além de ${n1}, qual foi a outra nota de ${nom}?`))
+            med = (n1 + n2)/2
+            
+            let res = document.getElementById('situacao') /* document.getElementById('situacao') - outra forma de o JAVA buscar o id*/
+            res.innerHTML = `<p> Calculando a média final de <mark>${nom}</mark>.</p>` /*msrk é para deixar o fundo amarelo*/
+            res.innerHTML += `<p> As notas obtidas foram <mark>${n1} e ${n2} </mark>.</p>`
+            res.innerHTML += `<p> A média final será <mark>${med}</mark>.</p>`
+                }
+    
+    </script>
+</body>
+</html>
